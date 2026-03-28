@@ -5,21 +5,21 @@
 class DailyMotd < Formula
   desc "Generic daily terminal message-of-the-day CLI. Ships with Today in Nature."
   homepage "https://github.com/mennoliefstingh/daily-motd"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.5/daily-motd_0.1.5_darwin_amd64.tar.gz"
-      sha256 "ec3afa8705869f071e54f7aa84781340877785ad8406cfdde98d1e440f0da524"
+      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.6/daily-motd_0.1.6_darwin_amd64.tar.gz"
+      sha256 "ebebba463229a1cd286b0823402fd2e2f97b1ba14f3c39e76249f8cd36b6613d"
 
       define_method(:install) do
         bin.install "daily-motd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.5/daily-motd_0.1.5_darwin_arm64.tar.gz"
-      sha256 "78b0266a149eb36fb0d9b2f3260bd32fefb12194404ce0ad77551a0da3b778d4"
+      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.6/daily-motd_0.1.6_darwin_arm64.tar.gz"
+      sha256 "d44a2aeb45a7faf4466928fcb3e041fde036847e0d113bf7ea8ab83f250a5179"
 
       define_method(:install) do
         bin.install "daily-motd"
@@ -29,15 +29,15 @@ class DailyMotd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.5/daily-motd_0.1.5_linux_amd64.tar.gz"
-      sha256 "3f03022e93f554923570af729849ec8f909bd04545bbb78196109335f2685f2a"
+      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.6/daily-motd_0.1.6_linux_amd64.tar.gz"
+      sha256 "70451ac3790236854d3e35067600ee1da72fbe3174aafce2380e16273d7d46d8"
       define_method(:install) do
         bin.install "daily-motd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.5/daily-motd_0.1.5_linux_arm64.tar.gz"
-      sha256 "80e4bdd5eb330f0921d9acffa6b21d5cbf48ee7c35c7676e105a099d7c51afd1"
+      url "https://github.com/mennoliefstingh/daily-motd/releases/download/v0.1.6/daily-motd_0.1.6_linux_arm64.tar.gz"
+      sha256 "825e69734e8e7d9c7018e5bd5c5448152fea05da79e94ff31b90ab8bfc567b11"
       define_method(:install) do
         bin.install "daily-motd"
       end
